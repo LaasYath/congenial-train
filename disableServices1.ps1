@@ -11,6 +11,7 @@ $services = @(
     "RemoteRegistry"                           # Remote Registry
     "RDSessMgr"                                # Helps with Remote Assistance functionality
     "SNMPTRAP"                                 # Simple Network Management Protocol (too old!)
+    "storSvc"                                  # SSD Discovery Service
     "TapiSrv"                                  # Telephony
     "TlntSvr"                                  # Telnet
     "XboxGipSvc"                               # Manages connected Xbox Accessories
