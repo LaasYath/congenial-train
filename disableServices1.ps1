@@ -21,10 +21,12 @@ $services = @(
 
 foreach ($service in $services) {
     if (Get-Service -Name $service -ErrorAction SilentlyContinue) {
-        Write-Output "Stopping and disabling $ServiceName..."
+        Write-Output "Stopping and disabling $service..."
         Stop-Service -Name $service -Force
         Set-Service -Name $service -StartupType Disabled
     } else {
         Write-Output "Service $service not found."
     }
 }
+
+Write-Output "Script complete!"
